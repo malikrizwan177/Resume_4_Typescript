@@ -5,10 +5,10 @@ const Portfolio:React.FC = () => {
   const projects:Array<{image:string, link:string, description:string, gitLink:string}> = [
     {
       image: "./images/resume_4.png",
-      link: "https://resume-3-six.vercel.app/",
+      link: "https://resume-4-swart.vercel.app/",
       description:
         "The same resume made with Vite+React, TailwindCSS and Javascript instead of Typescript",
-        gitLink: "https://github.com/malikrizwan177/Resume_3",
+        gitLink: "https://github.com/malikrizwan177/Resume_4",
     },  
     {
       image: "./images/resume_3.png",
