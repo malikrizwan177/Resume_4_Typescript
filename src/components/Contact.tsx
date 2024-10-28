@@ -2,8 +2,10 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact:React.FC = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState<{f_name:string, l_name:string, email:string, budget:number, message:string}>({
+  const formRef:any = useRef();
+  const [form, setForm] = useState<{
+    [x: string]: string | number | readonly string[] | undefined;f_name:string, l_name:string, email:string, budget:number, message:string
+}>({
     f_name: "",
     l_name: "",
     email: "",
@@ -133,7 +135,7 @@ const Contact:React.FC = () => {
                 </div>
                 <div className="flex flex-col mt-10">
                   <label htmlFor="message">Message</label>
-                  <textarea name="message" id="message" rows="5" value={form.value} onChange={handleChange} required></textarea>
+                  <textarea name="message" id="message" rows={5} value={form.value} onChange={handleChange} required></textarea>
                 </div>
                 <button
                   type="submit"
