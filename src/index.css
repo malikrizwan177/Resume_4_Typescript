@@ -1,0 +1,64 @@
+@font-face {
+    font-family: inter;
+    src: local('inter'),
+        url('../src/assets/fonts/inter/static/Inter_18pt-Regular.ttf');
+}
+
+@font-face {
+    font-family: lexendexa;
+    src: local('lexendexa'),
+        url('../src/assets/fonts/lexendexa/static/LexendExa-Regular.ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: inter;
+    scroll-behavior: smooth;
+  }
+
+.text-gradient {
+    background: linear-gradient(to top right,#444674, #895289);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.background-gradient {
+    background: linear-gradient(to top right,#444674, #895289);
+}
+
+.hero_name {
+    font-family: lexendexa;
+}
+
+.services_hover:hover {
+    background: linear-gradient(to top right,#444674, #895289);
+}
+
+.services_hover:hover .services_image_white {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+}
+
+.services_hover:hover .services_image {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+form label {
+    @apply text-[20px] font-medium
+}
+
+form input, form textarea {
+    @apply bg-primary-dark outline-none px-4 py-2 mt-2
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
