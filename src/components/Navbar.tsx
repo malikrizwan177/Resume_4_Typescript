@@ -34,6 +34,7 @@ const Navbar:React.FC = () => {
         </div>
         <div className="flex md:hidden relative">
           <img
+            loading="lazy"
             src={mobileMenuOpen ? "./icons/cancel.png" : "./icons/menu-bar.png"}
             alt="menubar"
             className="h-8 w-8 bg-white rounded-full cursor-pointer"

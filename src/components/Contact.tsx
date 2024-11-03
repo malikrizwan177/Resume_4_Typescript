@@ -81,6 +81,7 @@ const Contact:React.FC = () => {
             <p className="text-gradient mt-10 flex flex-row gap-2">
               LinkedIn{" "}
               <img
+                loading="lazy"
                 src="./icons/linkedin.png"
                 alt="linkedin"
                 className="w-5 h-5"
@@ -92,11 +93,12 @@ const Contact:React.FC = () => {
               className="hover:text-blue-500 flex flex-row justify-start items-start gap-2"
             >
               Check Profile{" "}
-              <img src="./icons/link.svg" alt="link" className="w-5 h-5" />
+              <img src="./icons/link.svg" alt="link" loading="lazy" className="w-5 h-5" />
             </a>
             <p className="text-gradient mt-10 flex flex-row gap-2">
               Github{" "}
               <img
+                loading="lazy"
                 src="./icons/github.png"
                 alt="github"
                 className="w-5 h-5 bg-white rounded-xl p-[0.1rem]"
@@ -108,7 +110,7 @@ const Contact:React.FC = () => {
               className="hover:text-blue-500 flex flex-row justify-start items-start gap-2"
             >
               Check Profile{" "}
-              <img src="./icons/link.svg" alt="link" className="w-5 h-5" />
+              <img src="./icons/link.svg" alt="link" loading="lazy" className="w-5 h-5" />
             </a>
           </div>
           <div className="w-full max-w-[750px]">

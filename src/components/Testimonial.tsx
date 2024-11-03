@@ -93,26 +93,31 @@ const Testimonial:React.FC = () => {
                 <div className="px-10 py-5 bg-primary-dark flex flex-col gap-5 justify-center items-start rounded-2xl max-w-[450px] md:max-w-full cursor-grab">
                   <div className="flex flex-row gap-2 md:gap-5 justify-center items-center">
                     <img
+                      loading="lazy"
                       src="./icons/round-star.png"
                       alt="round star"
                       className="w-5 h-5 lg:w-8 lg:h-8"
                     />
                     <img
+                      loading="lazy"
                       src="./icons/round-star.png"
                       alt="round star"
                       className="w-5 h-5 lg:w-8 lg:h-8"
                     />
                     <img
+                      loading="lazy"
                       src="./icons/round-star.png"
                       alt="round star"
                       className="w-5 h-5 lg:w-8 lg:h-8"
                     />
                     <img
+                      loading="lazy"
                       src="./icons/round-star.png"
                       alt="round star"
                       className="w-5 h-5 lg:w-8 lg:h-8"
                     />
                     <img
+                      loading="lazy"
                       src="./icons/round-star.png"
                       alt="round star"
                       className="w-5 h-5 lg:w-8 lg:h-8"
@@ -124,6 +129,7 @@ const Testimonial:React.FC = () => {
                   <p className="text-[16px]">{items.review}</p>
                   <div className="flex flex-row justify-center items-start gap-5">
                     <img
+                      loading="lazy"
                       src={items.img}
                       alt="profile pic"
                       className="rounded-full w-10 h-10"

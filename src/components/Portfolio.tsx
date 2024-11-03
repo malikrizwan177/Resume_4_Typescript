@@ -75,6 +75,7 @@ const Portfolio:React.FC = () => {
                 className="flex flex-col justify-center items-center"
               >
                 <img
+                  loading="lazy"
                   src={items.image}
                   alt={items.image}
                   className={`${
@@ -96,6 +97,7 @@ const Portfolio:React.FC = () => {
                   }`}>
                   {items.gitLink === "blucomm" ? "Code unavailable" : "Source Code"}
                   <img
+                    loading="lazy"
                     src="./icons/github.png"
                     alt="github"
                     className="w-5 h-5 bg-white rounded-xl p-[0.1rem]"
