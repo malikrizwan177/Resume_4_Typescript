@@ -1,5 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.compat.css"
 
 const Contact:React.FC = () => {
   const formRef:any = useRef();
@@ -113,6 +115,7 @@ const Contact:React.FC = () => {
             <p className="text-[32px] md:text-[40px] mt-10 md:mt-0">
               Let's Work Together
             </p>
+            <ScrollAnimation animateIn="fadeIn">
             <div className="mt-10">
               <form ref={formRef} onSubmit={handleSubmit} autoComplete="off">
                 <div className="grid grid-cols-2 gap-x-5 md:gap-x-10  gap-y-10 w-full">
@@ -145,6 +148,7 @@ const Contact:React.FC = () => {
                 </button>
               </form>
             </div>
+            </ScrollAnimation>
           </div>
         </div>
         </div>

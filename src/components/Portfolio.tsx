@@ -1,4 +1,6 @@
 import { useState } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.compat.css"
 
 const Portfolio:React.FC = () => {
   const [slide, setSlide] = useState<number>(0);
@@ -59,9 +61,10 @@ const Portfolio:React.FC = () => {
   return (
     <section id="projects" className="px-8 lg:px-32 py-10 md:py-20 bg-primary-dark">
       <div className="max-w-[1440px] mx-auto">
-      <p className="text-[20px] text-gradient font-medium">Works & Portfolio</p>
-      <p className="text-[40px] font-semibold">My Projects</p>
-      <div className="flex flex-row flex-wrap justify-center items-center mt-10">
+      <p className="text-[20px] text-gradient font-medium text-center">Works & Portfolio</p>
+      <p className="text-[40px] font-semibold text-center">My Projects</p>
+      <ScrollAnimation animateIn="fadeIn">
+      <div className="flex flex-row flex-wrap justify-center items-center mt-10 md:mt-16">
         <div className="relative ">
           {projects.map((items, index) => (
             <>
@@ -124,6 +127,7 @@ const Portfolio:React.FC = () => {
           ))}
         </div>
       </div>
+      </ScrollAnimation>
       </div>
     </section>
   );

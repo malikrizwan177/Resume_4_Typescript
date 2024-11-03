@@ -1,10 +1,15 @@
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.compat.css"
+
 const Experience:React.FC = () => {
     return (
       <section id="experience" className="px-8 lg:px-32 py-10 md:py-20 bg-primary">
         <div className="max-w-[1440px] mx-auto">
+        <p className="text-[20px] text-gradient font-medium text-center">Works & Description</p>
         <p className="text-[40px] font-semibold text-center">
           My Work Experience
         </p>
+        <ScrollAnimation animateIn="fadeIn">
         <div className="flex flex-row justify-between gap-10 lg:gap-20">
           <div className="flex flex-row md:flex-row-reverse justify-start md:justify-between items-center w-full md:w-1/2">
             <div className="flex flex-col justify-center items-center mt-16">
@@ -50,6 +55,7 @@ const Experience:React.FC = () => {
             </div>
           </div>
         </div>
+        </ScrollAnimation>
         </div>
       </section>
     );

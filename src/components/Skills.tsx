@@ -1,3 +1,6 @@
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.compat.css"
+
 const Skills:React.FC = () => {
     const skills:Array<{name:string, percentage:number}> = [
       { name: "HTML / CSS / JavaScript / React", percentage: 75 },
@@ -8,6 +11,7 @@ const Skills:React.FC = () => {
     ];
     return (
       <section className="px-8 lg:px-32 py-10 md:py-20 bg-primary-dark">
+        <ScrollAnimation animateIn="fadeIn">
         <div className="flex flex-col md:flex-row gap-10 justify-between items-start max-w-[1440px] mx-auto">
           <div className="flex flex-col justify-center items-start gap-5 max-w-[580px]">
             <p className="text-[20px] text-gradient font-medium">
@@ -35,6 +39,7 @@ const Skills:React.FC = () => {
             ))}
           </div>
         </div>
+        </ScrollAnimation>
       </section>
     );
   };

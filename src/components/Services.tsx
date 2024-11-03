@@ -1,3 +1,6 @@
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.compat.css"
+
 const Services:React.FC = () => {
     const services:Array<{img:string, img_white:string, heading:string, description:string}> = [
         {img: "./icons/Graphic_Design.png", img_white: "./icons/Graphic_Design_White.png", heading: "Web Development", description: "I can make any website using React and TailwindCSS"},
@@ -10,6 +13,7 @@ const Services:React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
         <p className="text-[20px] text-gradient font-medium">Services I Provide</p>
         <p className="text-[40px] font-semibold">My Services</p>
+        <ScrollAnimation animateIn="fadeIn">
         <div className="flex flex-row justify-center flex-wrap gap-5 mt-10 text-center">
             {services.map((item) => (
                 <div key={item.heading} className="flex flex-col items-center gap-10 rounded-lg border-secondary hover:border-none border-[1px] px-5 py-10 max-w-[280px] cursor-pointer ease-in-out duration-500 services_hover">
@@ -20,6 +24,7 @@ const Services:React.FC = () => {
                 </div>
             ))}
         </div>
+        </ScrollAnimation>
         </div>
     </section>
   )
