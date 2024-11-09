@@ -7,7 +7,7 @@ const Skills:React.FC = () => {
       { name: "Typescript", percentage: 50 },
       { name: "Tailwind CSS", percentage: 80 },
       { name: "Github", percentage: 50 },
-      { name: "MongoDB", percentage: 40 },
+      { name: "Nodejs", percentage: 35 },
     ];
     return (
       <section className="px-8 lg:px-32 py-10 md:py-20 bg-primary-dark">
