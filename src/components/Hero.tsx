@@ -9,7 +9,7 @@ const Hero:React.FC = () => {
       <div className="flex flex-col md:flex-row-reverse gap-10 justify-between items-center max-w-[1440px] mx-auto">
       <img
         loading="lazy"
-        src="./images/hero.png"
+        src="./images/profile_photo.png"
         alt="hero_image"
         className="xl:max-h-[500px] lg:max-h-[350px] md:max-h-[320px] max-h-[300px]"
       />
