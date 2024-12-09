@@ -11,7 +11,14 @@ const Portfolio:React.FC = () => {
       description:
         "A MERN stack e-commerce project with a working admin panel and backend",
         gitLink: "https://github.com/malikrizwan177/E-Commerce-App-1",
-    },  
+    },
+    {
+      image: "./images/event-app.png",
+      link: "https://event-booking-app-omega.vercel.app/",
+      description:
+        "A frontend typescript project integrated with a firebase backend",
+        gitLink: "https://github.com/malikrizwan177/Event-app",
+    },
     {
       image: "./images/resume_4.png",
       link: "https://resume-4-swart.vercel.app/",
