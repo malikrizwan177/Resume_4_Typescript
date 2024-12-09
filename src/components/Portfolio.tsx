@@ -6,6 +6,13 @@ const Portfolio:React.FC = () => {
   const [slide, setSlide] = useState<number>(0);
   const projects:Array<{image:string, link:string, description:string, gitLink:string}> = [
     {
+      image: "./images/e-commerce-app-1.png",
+      link: "https://e-commerce-app-1-frontend.vercel.app/",
+      description:
+        "A MERN stack e-commerce project with a working admin panel and backend",
+        gitLink: "https://github.com/malikrizwan177/E-Commerce-App-1",
+    },  
+    {
       image: "./images/resume_4.png",
       link: "https://resume-4-swart.vercel.app/",
       description:
