@@ -1,64 +1,105 @@
 import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css/animate.compat.css"
+import "animate.css/animate.compat.css";
 
-const Experience:React.FC = () => {
-    return (
-      <section id="experience" className="px-8 lg:px-32 py-10 md:py-20 bg-primary">
-        <div className="max-w-[1440px] mx-auto">
-        <p className="text-[20px] text-gradient font-medium text-center">Works & Description</p>
+const Experience: React.FC = () => {
+  return (
+    <section
+      id="experience"
+      className="px-8 lg:px-32 py-10 md:py-20 bg-primary"
+    >
+      <div className="max-w-[1440px] mx-auto">
+        <p className="text-[20px] text-gradient font-medium text-center">
+          Works & Description
+        </p>
         <p className="text-[40px] font-semibold text-center">
           My Work Experience
         </p>
         <ScrollAnimation animateIn="fadeIn">
-        <div className="flex flex-row justify-between gap-10 lg:gap-20">
-          <div className="flex flex-row md:flex-row-reverse justify-start md:justify-between items-center w-full md:w-1/2">
-            <div className="flex flex-col justify-center items-center mt-16">
-              <div className="p-5 outline-2 outline-dashed outline-offset-2 background-gradient rounded-full"/>
-              <hr className="border-2 border-dashed rotate-90 my-12 w-24" />
-              <div className="p-5 outline-2 outline-dashed outline-offset-2 bg-black rounded-full"/>
-              <hr className="border-2 border-dashed rotate-90 my-12 w-24" />
-              <div className="p-5 outline-2 outline-dashed outline-offset-2 background-gradient rounded-full"/>
+          <div className="flex flex-row justify-between gap-10 lg:gap-20">
+            <div className="flex flex-row md:flex-row-reverse justify-start md:justify-between items-center w-full md:w-1/2">
+              <div className="flex flex-col justify-center items-center mt-16">
+                <div className="p-5 outline-2 outline-dashed outline-offset-2 background-gradient rounded-full" />
+                <hr className="border-2 border-dashed rotate-90 my-12 w-24" />
+                <div className="p-5 outline-2 outline-dashed outline-offset-2 background-gradient rounded-full" />
+                <hr className="border-2 border-dashed rotate-90 my-12 w-24" />
+                <div className="p-5 outline-2 outline-dashed outline-offset-2 background-gradient rounded-full" />
+                <hr className="border-2 border-dashed rotate-90 my-12 w-24" />
+                <div className="p-5 outline-2 outline-dashed outline-offset-2 bg-black rounded-full" />
+              </div>
+              <div className="flex flex-col gap-20 mt-20">
+                <div>
+                  <p className="text-[20px] md:text-[26px] font-semibold">
+                    Poiesis Technologies
+                  </p>
+                  <p className="text-[12] md:text-[16px] font-medium">
+                    Oct 2022 - Oct 2023
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[20px] md:text-[26px] font-semibold">
+                    BluComm Technologies
+                  </p>
+                  <p className="text-[12] md:text-[16px] font-medium">
+                    May 2024 - Aug 2024
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[20px] md:text-[26px] font-semibold">
+                    Poiesis Technologies
+                  </p>
+                  <p className="text-[12] md:text-[16px] font-medium">
+                    Oct 2024 - Dec 2024
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[20px] md:text-[26px] font-semibold">
+                    Envio By Vista
+                  </p>
+                  <p className="text-[12] md:text-[16px] font-medium">
+                    Jan 2025 - Present
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col gap-20 mt-20">
+            <div className="hidden md:flex flex-col gap-12 w-1/2 mt-24">
               <div>
-                <p className="text-[20px] md:text-[26px] font-semibold">Poiesis Technologies</p>
-                <p className="text-[12] md:text-[16px] font-medium">Oct 2022 - Oct 2023</p>
+                <p className="text-gradient text-[26px]">
+                  Frontend Developer Intern
+                </p>
+                <p className="text-[18px]">
+                  Made SPA landing pages using simple HTML5 and Custom CSS provided
+                  by the UI/UX team through figma files{" "}
+                </p>
               </div>
               <div>
-                <p className="text-[20px] md:text-[26px] font-semibold">BluComm Technologies</p>
-                <p className="text-[12] md:text-[16px] font-medium">May 2024 - Aug 2024</p>
+                <p className="text-gradient text-[26px]">MERN Stack Intern</p>
+                <p className="text-[18px]">
+                  Made 2 MERN Stack projects using React, TailwindCSS,
+                  Custom Hooks, Context API, Node, Express, and MongoDB{" "}
+                </p>
               </div>
               <div>
-                <p className="text-[20px] md:text-[26px] font-semibold">Poiesis Technologies</p>
-                <p className="text-[12] md:text-[16px] font-medium">Oct 2024 - Present</p>
+                <p className="text-gradient text-[26px]">React Web Developer</p>
+                <p className="text-[18px]">
+                  Making Frontend React projects using React and
+                  TailwindCSS provided by UI/UX team though figma files{" "}
+                </p>
+              </div>
+              <div>
+                <p className="text-gradient text-[26px]">
+                  Associate Software Engineer
+                </p>
+                <p className="text-[18px]">
+                  Debugging, Maintaining, and Creating Modules for a Logistic
+                  Software in React 17 using Bootstrap and Redux{" "}
+                </p>
               </div>
             </div>
           </div>
-          <div className="hidden md:flex flex-col gap-12 w-1/2 mt-24">
-            <div>
-              <p className="text-gradient text-[26px]">Frontend React Intern</p>
-              <p className="text-[18px]">
-                Made SPA landing pages using simple React, Custom CSS provided by the UI/UX team through figma files{" "}
-              </p>
-            </div>
-            <div>
-              <p className="text-gradient text-[26px]">MERN Stack Intern</p>
-              <p className="text-[18px]">
-                Made 2 MERN Stack projects using Vite+React, TailwindCSS, Custom Hooks, Context API, Node, Express, and MongoDB{" "}
-              </p>
-            </div>
-            <div>
-              <p className="text-gradient text-[26px]">React Web Developer</p>
-              <p className="text-[18px]">
-                Making Frontend React projects using Vite+React and TailwindCSS provided by UI/UX team though figma files{" "}
-              </p>
-            </div>
-          </div>
-        </div>
         </ScrollAnimation>
-        </div>
-      </section>
-    );
-  };
-  
-  export default Experience;
+      </div>
+    </section>
+  );
+};
+
+export default Experience;
